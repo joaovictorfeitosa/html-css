@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+<style>
+   body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+   }
+   header{
+    background-color: rgb(255, 255, 255);
+    padding: 10px auto 10px auto;
+    margin: 10px;
+    height: 100px;
+    border-radius: 0px 40px;
+   }
+   header > h1{
+    margin: 5px;
+    
+   }
+   nav{ 
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.378);
+    background-color: dimgray;
+    margin: 10px 10px 10px 10px;
+   }
+   nav > a{
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+   }
+   nav:hover > a{
+    text-decoration: underline;
+   }
+   article{
+    background-color: dimgray;
+   }
+   article > aside{
+    background-color: rgb(231, 199, 199);
+   }
+   main{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px 0px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.219);
+   }
+   h2{
+    margin: 10px;
+   }
+   p{
+    margin: 10px;
+   }
+
+   footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    
+   }
+   footer > p{
+    margin: 0px; /* Fiz isso porque quando aumentei o padding do footer, estava ficando muita mais largo do que deveria*/
+   }
+
+</style>
+<body>
+    <header>
+        <h1>top</h1>
+        <nav > <!-- serve para agrupar links-->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="noticias">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum neque hic amet ab, dolores nihil illo illum a, porro quod labore voluptates aperiam, quidem itaque tempore. Fugiat quo eaque quia.</p>
+        </section>
+
+        <section id="assuntos">
+            <article>
+                <h2 class="hdois">Artigo 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, sit mollitia? Cum, doloribus magni. Consequatur quis dolor eos dolorum saepe blanditiis sapiente fugiat, quasi ad aperiam, accusantium vitae nemo consequuntur.</p>
+                <aside> <!-- Serve mais ou menos para dar créditos-->
+                    <p>PAG DO JV!</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Artigo 2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quos ab sapiente, perspiciatis repellendus animi assumenda, obcaecati culpa odit voluptates, dicta accusamus voluptatem sed et aut dolorum atque nulla unde.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer> <!--Rodapé-->
+        <p>desenvolvido por JV! </p>
+    </footer>
+    
+</body>
+</html>
+<!--<div>                                  Forma de fazer usando divs
+    <div class="cabecalho"></div>
+    <h1>chaaaama</h1>
+    <div class=" menu">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dicta suscipit. Cum vel facilis tempora, modi earum natus ex tenetur? Nobis fugiat beatae alias esse delectus optio cumque eaque ipsam?</p>
+    </div>
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloremque, veniam cupiditate, magni, in ratione voluptatibus error commodi eligendi dolorem aspernatur est. Nostrum quidem facere possimus dolores hic suscipit esse!</p>
+    </div>
+    <div class="rodape">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reiciendis eius, a explicabo quod veritatis debitis eligendi laborum suscipit necessitatibus corrupti, fugit quisquam mollitia dolorem consequuntur saepe quibusdam rem nisi.</p>
+    </div>
+</div>-->

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+}
+
+p{
+    text-align: justify;
+}
+body{
+    
+    background-image: linear-gradient(to bottom, #151F30, #103778);
+    background-attachment: fixed; /*Faz o degradê ficar certo. Poderia também ter declarado height: auto; dentro da main, iria funcionar.*/
+}
+
+main{
+    background-color: azure;
+    padding: 10px;
+    width: 600px;
+    margin:auto ; /* Deixa sempre centralizado, mesmo diminuindo ou aumentando o tamanho da página*/
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #090e169a; /*Primeiro parâmetro é quanto a sombra anda pro lado, o segundo é pra baixo, o terceiro é o quanto essa sombra vai espalhar*/
+}
+h1{
+    color: #FF7A48;
+    text-align: center;
+    text-shadow: 1px 1px 2px #c75f3adb;
+}
+h2{
+    color: #0593A2;
+}

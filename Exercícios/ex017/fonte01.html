@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            /*  Medidas absolutas
+            cm, mm, in(polegada), px, pt (ponto), pc(paica)
+            
+            Medidas relativas
+            em (altura do M maiusculo), ex(altura do x), rem (igual o em, só que com a fonte configurada 
+            no body), vw (largura da viewport), vh (altura da viewport), %
+            
+            16px geralmente = 1em
+            */
+            font-size: 1.5em;
+            font-weight: bold; /*lighter, normal, bold, bolder*/
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h1, h2{
+            font-family:'Times New Roman', Times, serif;
+        }
+        p{
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: arial;
+
+            substitui esses 4 comandos
+            */
+            font: italic bolder 1em arial ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ullam temporibus magni, animi laborum voluptates quod autem assumenda perferendis molestias alias soluta vitae adipisci suscipit quae expedita neque molestiae consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, id? Aliquam doloribus placeat enim totam optio ducimus, assumenda quis quibusdam eos, beatae soluta. Veritatis fugit explicabo minima amet fuga cupiditate.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur omnis error deleniti aut! Iure totam repellat autem tempora blanditiis architecto ipsa reiciendis molestiae temporibus, minima nesciunt rerum voluptas corrupti nisi?</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo. Enim nemo optio doloribus quos quaerat non reiciendis eveniet quod. Error beatae omnis ipsam molestias possimus deleniti vel, cumque nam.</p>
+</body>
+</html>

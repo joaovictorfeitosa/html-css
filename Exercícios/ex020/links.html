@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* 
+        # - ID
+        . - Class
+        : - Pseudo-classe
+        :: - Pseudo-elemento
+        > - Children (filho)
+        */
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:visited{
+            color: rgb(50, 203, 45);
+
+        }
+        
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: green;
+        }
+        .especial::after{
+            content: ' <-';
+           font-weight: normal;
+            
+        }
+        .especial::before{
+            content: '-> ';
+            font-weight: normal;
+        }
+        .especial{
+            background-color: rgb(53, 96, 51);
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <h1 class="especial">Personalizando links</h1>
+    <ul>
+        <li><a class="especial" href="hover.html">Hover</a></li>
+        <li><a href="pseudoclasses.html">Pseudo-classes</a></li>
+    </ul>
+    
+</body>
+</html>

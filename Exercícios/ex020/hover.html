@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+       
+        .passe > p{
+            display: none;
+            
+        }
+        .passe:hover > p{
+            display: block;
+            color: #B61E79;
+            background-color: #36242F;
+            width: 110px;
+            
+        }
+        .passe:hover{
+           
+            color: rgb(128, 0, 0);
+        }
+        .passe{ 
+            width: 150px;
+        } /* Poderia colocar só "div" ao invés da class*/
+       
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="passe">
+         Passe o mouse aqui
+        <p>TE AMO MJ &lt;3</p>
+    </div>
+</body>
+</html>

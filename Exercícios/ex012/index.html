@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente!</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor! </p>
+
+    <video src="midias/video.mp4" poster="imagens/elefante_graudo-removebg-preview.png" width="560" loop controls></video>
+
+    <video width="560" controls poster="imagens/elefante_graudo-removebg-preview.png" loop>
+
+        <source src="midias/video.mp4" type="video/mp4">
+        <source src="midias/Video.mkv" type="video/mp4">
+        <source src="midias/Video.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=gsyY48h_uC81tvGK" title="GUANABIRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    
+</body>
+</html>

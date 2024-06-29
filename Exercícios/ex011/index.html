@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abra esse site em diversos aparelhos ou diminua o tamanho do seu navegador</p>
+    
+    <picture> <!--Botei 50px a mais do que o tamanho de cada imagem, para não aparecer a barra de rolagem lateral. e mudei de "min-width" para "max-width"-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">    
+    </picture>
+    <h1>Adicionando áudios!</h1>
+    <p>Colocando áudios no HTML5.</p>
+    <!--A tag "autoplay" não funcionou, não sei pq, mas deixei ela aí mesmo assim, serve para já iniciar tocando, sem o usuário da play-->
+    <!--Autoplay funcionou depois kkkkkkkkkkkk-->
+    <audio src="midia/pedro-song.mp3"  controls ></audio>
+    <!--Outra forma de adicionar áudio-->
+    <!--metadata = carrega os dados do áudio; auto = carrega o áudio completo; none = só carrega quando o usuário der o play-->
+    <audio preload="metadata">
+        <source src="midia/pedro-song.mp3" type="audio/mpeg">
+        <source src="midia/pedro-song.ogg" type="audio/ogg">
+        <source src="midia/pedro-song.wav" type="audio/wav">
+        <!--Evitar arquivos wav porque é grande-->
+        <p>Se não conseguiu ouvir o áudio, baixe ele <a href="midia/pedro-song.mp3">aqui</a></p>
+    </audio>
+    <p>Se não conseguiu ouvir o áudio, baixe ele <a href="midia/pedro-song.mp3" target="_blank">aqui</a>
+</body>
+</html>
