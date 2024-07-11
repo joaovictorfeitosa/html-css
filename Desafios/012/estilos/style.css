@@ -6,20 +6,28 @@
 *{
  margin: 0px;
  padding: 0px;
+ font-size: 1em;
 }
-body{
-    font-family: 'Sriracha', Arial, sans-serif;
+:root{
+    --fonte-corpo: 'Sriracha', Arial, sans-serif;
+    --fonte-titulo: 'Passion One', 'cursive', arial;
+}
+body, html{
+    font-family: var(--fonte-corpo);
+    border: 1px solid black;
+    min-height: 100vh;
 }
 
 header{
     background-color: black;
     padding: 10px;
     text-align: center;
-    font-family: 'Passion One', 'cursive', arial;
+    font-family: var(--fonte-titulo)
 }
 header > h1{
     color: white;
-    
+    font-size: 2em;
+    font-variant: small-caps;
     
     
 }
@@ -34,6 +42,10 @@ a{
     color: white;
     font-weight: bold;
 }
+a:hover{
+    text-decoration: underline;
+
+}
 header > p{
     color: rgba(255, 255, 255, 0.595);
     text-align: center;
@@ -41,4 +53,39 @@ header > p{
 p{
     padding-top: 10px;
     text-align: left;
+}
+pre{
+    font-family: var(--fonte-corpo);
+    white-space: pre-line; /* Remove os espaços e gruda na borda*/
+    padding-left: 10px;
+}
+#p2{
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 200px;
+    color: white;
+}
+.p2{
+    background-image: url(../imagens/background001.jpg);
+    background-size: 100% 100%;
+}
+#p5{
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 200px;
+    color: white;
+}
+.p5{
+    background-image: url(../imagens/background002.jpg);
+    background-size: 100% 100%;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 0.8em;
 }
