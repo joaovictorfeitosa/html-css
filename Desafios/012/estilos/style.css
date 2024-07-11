@@ -26,14 +26,13 @@ header{
 }
 header > h1{
     color: white;
-    font-size: 2em;
+    font-size: 10vw;
     font-variant: small-caps;
     
     
 }
 header > a{
     color: white;
-    
     font-weight: bold;
     
 }
@@ -49,6 +48,7 @@ a:hover{
 header > p{
     color: rgba(255, 255, 255, 0.595);
     text-align: center;
+    font-size: 1.9vw;
 }
 p{
     padding-top: 10px;
@@ -59,33 +59,44 @@ pre{
     white-space: pre-line; /* Remove os espaços e gruda na borda*/
     padding-left: 10px;
 }
-#p2{
-    background-color: rgba(0, 0, 0, 0.322);
-    width: 200px;
-    color: white;
-}
-.p2{
+#img2{
     background-image: url(../imagens/background001.jpg);
-    background-size: 100% 100%;
+    background-position: right center;
+    
 }
-#p5{
+section.imagem{
+    box-shadow: inset 5px 5px 13px black;
+    background-color: rgba(0, 0, 0, 0.367);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+section.imagem > pre{
     background-color: rgba(0, 0, 0, 0.322);
-    width: 200px;
     color: white;
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
 }
-.p5{
+#img5{
     background-image: url(../imagens/background002.jpg);
-    background-size: 100% 100%;
+    background-position: right center;
+   
 }
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2.5vw;
+}
+section > p{
+    padding-bottom: 2em;
 }
 footer{
     background-color: black;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.6vw;
 }
+
