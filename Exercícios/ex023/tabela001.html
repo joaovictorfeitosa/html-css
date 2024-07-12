@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela simples</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        .table3{
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            vertical-align: bottom; /* Não funcionou, ainda não sei pq*/
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        
+        .linha{
+            background-color: rgb(255, 0, 157);
+        }
+        .linha2{
+            background-color: purple;
+        }
+        .j{
+            background-color: rgb(255, 0, 157);
+        }
+        .v{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+<!-- HIERAQUIA DE TABELAS
+    TABLE = tabela
+        TR - table row (linha)
+            TABLE HEADER - cabeçalho
+            TD - table data (dados ou célula)-->
+    <table class="table1">
+        <tr class="linha"> <!-- linha 1-->
+            <td>M</td>
+            <td>M</td>
+            <td>M</td>
+        </tr>
+        <tr class="linha2"> <!-- linha 2-->
+            <td>J</td>
+            <td>J</td>
+            <td>J</td>
+        </tr>
+    </table>
+
+    <table class="table2">
+        <tr>
+            <td class="j">J</td>
+            <td class="v">J</td>
+            <td class="j">J</td>
+        </tr>
+        <tr>
+            <td class="v">V</td>
+            <td class="j">V</td>
+            <td class="v">V</td>
+        </tr>
+    </table>
+    <br>
+
+    <table class="table3">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>B3</td>
+            <td>B4</td>
+
+        </tr>
+    </table>
+</body>
+</html>
