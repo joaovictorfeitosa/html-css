@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        .cidade{
+            text-align: center;
+        }
+        .num{
+            text-align: right;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        caption{
+            background-color: rgba(128, 128, 128, 0.577);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Utiliza TH para títulos, TD para dados e TR para criar linha-->
+
+    <!-- ANATOMIA PARA TABELAS GRANDES
+
+     CAPTION - SERVE PARA FICAR COMO UM TÍTULO EM CIMA DA TABELA
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Tabela de população dos estados</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <!-- scope="col" é utilizado para indicar para o navegador que esse é o título de uma coluna ou seja, que os dados estão abixo-->
+
+             <!-- scope="row" é utilizado para indicar para o navegador que esse é o título de uma linha, pois o dado está a frente/lado e não a baixo-->
+        </thead>
+        <tbody>
+            <tr>
+                <td class="cidade">São Paulo</td>
+                <td class="num">100000</td>
+            </tr>
+            <tr>
+                <td class="cidade">Ceará</td>
+                <td class="num">80000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>988888</strong></td>
+                <!-- scope="row" é utilizado para indicar para o navegador que esse é o título de uma linha, pois o dado está a frente/lado e não a baixo-->
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
