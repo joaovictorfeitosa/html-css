@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* VAMOS USAR PARA FAZER O CABEÇALHO ACOMPANHAR A ROLAGEM DA PÁGINA*/
         }
         th, td{
             border: 1px solid black;
@@ -25,11 +26,28 @@
             background-color: gray;
             color: white;
         }
+        .acompanhar > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            
+            
+        }
         caption{
             background-color: rgba(128, 128, 128, 0.577);
             font-size: 1.5em;
             font-weight: bold;
         }
+        .zebra > tr:nth-child(odd){ /* "nth-child()" serve para dar o efeito zebrado na tabela. se usar "odd" as linhas impares são coloridas. Se usar "even" as linhas pares são coloridas. Pode usar também "2n" que vai deixar as pares e "2n - 1" que vai deixar as ímpares */
+            background-color: purple;
+            font-weight: bold;
+
+        }
+        /*.zebra > tr:nth-child(even){ 
+            background-color: rgb(249, 114, 249);    (USA 2, CASO O FUNDO DA PÁGINA NÃO SEJA DA COR DESEJADA)
+            font-weight: bold;
+
+        }*/
     </style>
 </head>
 <body>
@@ -74,6 +92,56 @@
             </tr>
         </tfoot>
     </table>
-    
+
+
+    <br>
+
+
+    <table>
+        <caption>Comparativo</caption>
+        <thead>
+            <tr>
+                <th scope="col">Maria Joyce</th>
+                <th scope="col">João Victor</th>
+            </tr>
+        </thead>
+        <tbody class="zebra">
+            <tr>
+                <td>1,63CM</td>
+                <td>1,79CM</td>
+            </tr>
+            <tr>
+                <td>53KG</td>
+                <td>64KG</td>
+            </tr>
+            <tr>
+                <td>Branca</td>
+                <td>Pardo</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                <th colspan="2" scope="row">Muy love</th> <!--"colspan" serve para mesclar células na horizontal. O 2 indica quantas células. "rowspan" mescla na vertical-->
+                
+            </tr>
+        </tfoot>
+    </table>
+
+<br>
+
+    <table>
+        <thead class="acompanhar">
+           <tr>
+            <th colspan="2">TITULO</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatibus illo ab dolorum quam eligendi quisquam quibusdam similique blanditiis ad voluptate ratione quaerat, inventore aliquid fugiat numquam omnis dolor! Impedit quo numquam eos? Vel deleniti, distinctio cum aut et, quaerat ut accusantium, nam ipsa iusto nobis sapiente at deserunt. Ducimus provident tempore ipsa vel odio? Molestias dolore ea sed quaerat ad corporis, officia, officiis, ipsum odit similique quam quas architecto eum tempore a minus ullam ut vel reiciendis delectus voluptas. Quos quisquam fugiat explicabo ullam at eos eaque fuga eum laboriosam. Vero sunt quod minima eveniet. Quos pariatur hic molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odio laboriosam voluptate nemo quae provident quos, ea reprehenderit magnam! Itaque, nisi. Iure, optio maiores nobis eius est ex cumque nihil repellendus, eaque harum modi id officiis maxime aliquam veritatis quisquam. Perspiciatis eveniet explicabo accusamus suscipit nostrum iusto corporis unde quam similique cumque saepe ipsam alias laudantium amet et dolorum, maxime aliquam odio nam expedita debitis repellat in non ab. Deserunt ut reiciendis assumenda rem ad vel corrupti illum debitis illo, architecto suscipit dolorum iure nulla dignissimos a perferendis quo doloribus! Qui fuga, quibusdam modi vel soluta nesciunt doloremque, unde facere delectus blanditiis perferendis impedit aspernatur, possimus fugit. Harum ab officiis nobis quaerat possimus! Illo itaque consequatur architecto tenetur dicta, eos expedita ea, odio maxime iste fugit enim animi reiciendis sed perferendis dolore ipsa esse velit dignissimos vero reprehenderit earum fugiat sapiente nostrum? Doloremque esse id facilis in voluptatem modi aut iure, quibusdam voluptates officia provident minima, numquam consequatur, iusto repudiandae eligendi quae aperiam obcaecati nisi ea eius autem quos impedit. Nostrum, inventore odit maxime ab maiores recusandae nisi ut provident mollitia quaerat aliquid cupiditate ad vero repudiandae non, labore cum pariatur. Laudantium non eaque ipsa explicabo? Provident officiis nostrum sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, fuga dolorum ex ratione assumenda ad, amet, autem unde et a tenetur nisi eaque optio consectetur repudiandae dolores fugiat nostrum possimus distinctio architecto soluta voluptas. Minima dicta sed unde itaque labore velit repellendus tenetur reiciendis tempore a voluptas, doloremque alias iusto necessitatibus minus odit, autem saepe perspiciatis odio eius, voluptate suscipit ab! Magnam neque illo quod maiores quis unde excepturi. Quo maiores accusamus vitae quis odit recusandae ut excepturi dolorem quam quisquam, molestiae, quos nesciunt? Recusandae aperiam fugit repellat enim. Quisquam repellat ut officiis officia et quae eius. Facere dolorem incidunt blanditiis earum obcaecati quibusdam a consequatur, aliquam impedit sequi optio culpa commodi dolores numquam vitae voluptates similique nam velit deserunt libero dignissimos laborum totam? Optio ipsam, mollitia, similique expedita provident laborum doloribus sapiente porro hic pariatur quas molestiae. Voluptatibus commodi labore unde consectetur quos ex in facere fugiat id illum soluta, eius reprehenderit provident dignissimos nisi minus dolorum facilis totam repudiandae dolore pariatur? Excepturi non, molestias praesentium ducimus harum architecto quaerat. Illo cupiditate alias ratione quaerat. Assumenda, reprehenderit recusandae aliquid eveniet voluptates obcaecati, ea numquam tenetur esse illum eum! Necessitatibus voluptatum sapiente, iusto illum, nihil amet modi doloribus fuga sunt eveniet, quia culpa porro dignissimos quis. Ducimus laudantium optio similique sed culpa distinctio at atque modi, animi voluptatibus temporibus quia voluptas voluptates dolorem officia laborum sapiente harum? Aut hic magni iste amet, vel in tempora aliquid aperiam dolorem repellat quidem nihil et perspiciatis doloremque quo recusandae quibusdam provident inventore blanditiis. Iste quas eum obcaecati delectus quibusdam molestiae id quod iure quos, maxime consequuntur maiores, aperiam molestias quam cumque vitae nesciunt magnam. Exercitationem perspiciatis tempora iure magni, impedit tenetur. Ut facere at, itaque in facilis, vero iste sit corrupti accusamus fugit commodi laboriosam officia exercitationem, consectetur culpa dicta enim vel est nesciunt explicabo libero. Perferendis adipisci inventore numquam nihil harum est libero iure distinctio vel dolores expedita doloremque rem sunt fugiat fuga, nostrum modi! Quam ex dicta molestias consequatur pariatur asperiores voluptates, aspernatur harum minus, doloremque placeat ipsam quis maiores nesciunt totam cumque fugit laudantium sit nam officiis, dolore est quod. Pariatur inventore eum mollitia adipisci, ex odio laudantium. Ad illo, eos, esse eum, corrupti impedit nam omnis unde quaerat minima autem quam veniam nulla cupiditate neque atque modi eaque harum ducimus? Nobis laudantium quasi id provident corrupti minima repudiandae iste dolores quae. Dolorum quibusdam tempore modi assumenda dignissimos ipsum. Repellendus voluptas quo provident rerum iusto tenetur laudantium, quidem sunt id nihil, porro consectetur iure cum maxime, esse magni fuga eveniet. Magni aperiam provident repudiandae. Eos eius maxime magni aliquam dolore! Magni numquam enim optio, reprehenderit quas molestias aliquam possimus in vero ipsum delectus! Consequatur perferendis, reprehenderit repudiandae culpa fugit atque hic distinctio placeat corrupti minus, voluptate eius sapiente ab praesentium voluptatum dicta, corporis expedita omnis nobis animi consequuntur? Quod odio sed, officia reprehenderit, dolores debitis quia esse aperiam ab sunt nisi animi soluta libero ad exercitationem culpa porro laborum aliquid numquam similique eius earum. Molestias praesentium rerum repellendus perferendis quam!</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
