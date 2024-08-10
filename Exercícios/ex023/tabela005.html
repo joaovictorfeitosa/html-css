@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Span e col</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        
+      }
+      caption{
+        font-size: 1.5em;
+        background-color: rgb(46, 45, 45);
+        color: white;
+        padding: 10px;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        width: 200px;
+        padding: 10px;
+      }
+     
+      .col1{
+          background-image: linear-gradient(to top, purple, black);
+  
+        }
+        .col2{
+          background-image: linear-gradient(to bottom, blue, rgb(0, 0, 0));
+        }
+      .carea{
+        background-image: linear-gradient(to bottom, blue, red);
+    }
+    </style>
+  </head>
+  <body>
+    <table>
+        <!-- A personalização vai de acordo com o col, o primeiro col é referente a primeira coluna e assim por diante. Span "" serve para a personalização ser aplicada a quantidade de colunas que for indicada, ex: span="2" vai pegar a coluna que está selecionado e a coluna a seguir.-->
+      <colgroup> 
+        <col class="col1">
+        <col class="col2">
+        <col span="2" class="carea">
+    </colgroup>
+
+    <caption>TABELA COLORIDA</caption>
+
+    <tr>
+        <th>Pessoas</th>
+        <th>Carros</th>
+        <th>Esportes</th>
+        <th>Cor</th>
+    </tr>
+    <tr>
+        <td>JV</td>
+        <td>Mazda RX7</td>
+        <td>Fut</td>
+        <td>Preto</td>
+        
+    </tr>
+    <tr>
+        <td>MJ</td>
+        <td>A decidir</td>
+        <td>Vôlei</td>
+        <td>Roxo</td>
+    </tr>
+    <tr>
+        <td>JJ</td>
+        <td>SW4 Diamond</td>
+        <td>...</td>
+        <td>Preto e roxo</td>
+    </tr>
+    
+    </table>
+  </body>
+</html>
